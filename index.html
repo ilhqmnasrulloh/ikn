@@ -86,7 +86,7 @@
     content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
     background:
       radial-gradient(120% 80% at 18% 0%, rgba(201,169,110,.16) 0%, rgba(201,169,110,0) 42%),
-      linear-gradient(180deg, rgba(8,26,16,.74) 0%, rgba(10,38,23,.52) 30%, rgba(10,42,26,.60) 62%, rgba(7,22,13,.92) 100%);
+      linear-gradient(180deg, rgba(8,26,16,.80) 0%, rgba(10,38,23,.60) 30%, rgba(10,42,26,.66) 62%, rgba(7,22,13,.93) 100%);
   }
   .grain{
     position:absolute;inset:0;z-index:2;pointer-events:none;opacity:.05;mix-blend-mode:overlay;
@@ -106,7 +106,7 @@
       "lahan pembiayaan"
       "timeline timeline"
       "footer footer";
-    gap:18px 22px;
+    gap:20px 24px;
   }
 
   /* ---------- header ---------- */
@@ -119,7 +119,7 @@
   .vision{max-width:520px;text-align:right;display:flex;flex-direction:column;gap:8px}
   .vision .vlabel{font-size:11.5px;letter-spacing:.36em;text-transform:uppercase;color:var(--gold-bright);font-weight:600}
   .vision .vtag{font-family:'Playfair Display',serif;font-style:italic;font-size:31px;line-height:1.06;color:#fff;text-shadow:0 2px 16px rgba(0,0,0,.55)}
-  .vision .vsub{font-size:12.5px;color:rgba(247,243,234,.82);line-height:1.45}
+  .vision .vsub{font-size:12.5px;color:rgba(247,243,234,.9);line-height:1.5}
 
   /* ---------- glass panel base ---------- */
   .panel{
@@ -129,13 +129,13 @@
     backdrop-filter:blur(7px) saturate(115%);
     -webkit-backdrop-filter:blur(7px) saturate(115%);
     box-shadow:0 14px 34px rgba(0,0,0,.34),inset 0 1px 0 rgba(255,255,255,.05);
-    padding:16px 18px;
+    padding:18px 20px;
     display:flex;flex-direction:column;
   }
-  .ptitle{display:flex;align-items:center;gap:10px;margin-bottom:13px}
+  .ptitle{display:flex;align-items:center;gap:10px;margin-bottom:15px}
   .ptitle .bar{width:26px;height:3px;border-radius:3px;background:linear-gradient(90deg,var(--gold-bright),var(--gold-deep))}
   .ptitle h2{font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;font-size:16px;letter-spacing:.02em;color:#fff;text-transform:uppercase}
-  .ptitle h2 .sub{display:block;font-weight:500;font-size:11px;letter-spacing:.12em;color:var(--gold-bright);text-transform:none;margin-top:2px}
+  .ptitle h2 .sub{display:block;font-weight:500;font-size:11px;letter-spacing:.1em;color:var(--gold-bright);text-transform:none;margin-top:3px}
 
   /* ---------- 8 principles ---------- */
   .principles{grid-area:principles}
@@ -147,21 +147,21 @@
     font-weight:700;font-size:12.5px;letter-spacing:.04em;color:var(--gold-bright)
   }
   .badge b{font-family:'Playfair Display',serif;font-size:18px;color:#fff;line-height:1}
-  .pgrid{display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:1fr 1fr;gap:11px;flex:1}
+  .pgrid{display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:1fr 1fr;gap:13px;flex:1}
   .pcard{
-    position:relative;border-radius:11px;padding:13px 12px 12px;
+    position:relative;border-radius:11px;padding:14px 13px 13px;
     background:linear-gradient(165deg,rgba(31,92,58,.42),rgba(10,36,22,.5));
     border:1px solid rgba(201,169,110,.2);
     display:flex;flex-direction:column;gap:8px;overflow:hidden;
     transition:transform .25s ease,border-color .25s ease;
   }
   .pcard:hover{transform:translateY(-3px);border-color:rgba(201,169,110,.55)}
-  .pcard .num{position:absolute;top:8px;right:11px;font-family:'Playfair Display',serif;font-size:30px;font-weight:700;color:rgba(201,169,110,.28);line-height:1}
+  .pcard .num{position:absolute;top:8px;right:11px;font-family:'Playfair Display',serif;font-size:30px;font-weight:700;color:rgba(201,169,110,.26);line-height:1}
   .pcard .ic{width:34px;height:34px;display:flex;align-items:center;justify-content:center;border-radius:9px;background:rgba(201,169,110,.16);border:1px solid rgba(201,169,110,.32)}
   .pcard .ic svg{width:20px;height:20px;stroke:var(--gold-bright);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
-  .pcard h3{font-size:13px;font-weight:700;color:#fff;line-height:1.16;letter-spacing:.01em}
-  .pcard p{font-size:10.5px;line-height:1.32;color:rgba(247,243,234,.78);font-weight:400}
-  .pcard .kpi{margin-top:auto;font-size:9.5px;letter-spacing:.04em;color:var(--gold-bright);font-weight:600;text-transform:uppercase}
+  .pcard h3{font-size:13.5px;font-weight:700;color:#fff;line-height:1.2;letter-spacing:.01em}
+  .pcard p{font-size:11px;line-height:1.4;color:rgba(247,243,234,.86);font-weight:400}
+  .pcard .kpi{margin-top:auto;padding-top:4px;font-size:10px;letter-spacing:.03em;color:var(--gold-bright);font-weight:700;text-transform:uppercase}
 
   /* ---------- donut shared ---------- */
   .kawasan{grid-area:kawasan}
@@ -179,27 +179,27 @@
   }
   .donut .hole .big{font-family:'Playfair Display',serif;font-size:23px;font-weight:700;color:#fff;line-height:1}
   .donut .hole .lab{font-size:8.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-bright);font-weight:600}
-  .legend{display:flex;flex-direction:column;gap:11px;flex:1;min-width:0}
-  .legend .row{display:flex;align-items:flex-start;gap:10px}
-  .legend .sw{width:14px;height:14px;border-radius:4px;flex:0 0 auto;margin-top:2px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.15)}
+  .legend{display:flex;flex-direction:column;gap:13px;flex:1;min-width:0}
+  .legend .row{display:flex;align-items:flex-start;gap:11px}
+  .legend .sw{width:15px;height:15px;border-radius:4px;flex:0 0 auto;margin-top:2px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.15)}
   .legend .txt{min-width:0}
-  .legend .txt .pct{font-family:'Playfair Display',serif;font-size:19px;font-weight:700;color:#fff;line-height:1}
-  .legend .txt .nm{font-size:11.5px;font-weight:600;color:#fff;line-height:1.2;margin-top:1px}
-  .legend .txt .ds{font-size:10px;color:rgba(247,243,234,.74);line-height:1.3;margin-top:1px}
+  .legend .txt .pct{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:#fff;line-height:1}
+  .legend .txt .nm{font-size:12px;font-weight:600;color:#fff;line-height:1.2;margin-top:2px}
+  .legend .txt .ds{font-size:10.5px;color:rgba(247,243,234,.84);line-height:1.34;margin-top:2px}
 
   /* ---------- luas lahan ---------- */
   .lahan{grid-area:lahan}
   .lahan .total{display:flex;align-items:baseline;gap:9px;margin-bottom:12px}
   .lahan .total .v{font-family:'Playfair Display',serif;font-size:30px;font-weight:800;color:var(--gold-bright);line-height:1}
   .lahan .total .u{font-size:12px;color:rgba(247,243,234,.8);font-weight:500}
-  .lhbars{display:flex;flex-direction:column;gap:11px;flex:1;justify-content:center}
-  .lhrow .lhtop{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:5px}
-  .lhrow .lhname{font-size:11.5px;font-weight:600;color:#fff}
-  .lhrow .lhname span{display:block;font-size:9.5px;font-weight:400;color:rgba(247,243,234,.62);letter-spacing:.04em}
-  .lhrow .lhval{font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--gold-bright)}
-  .lhrow .track{height:13px;border-radius:7px;background:rgba(255,255,255,.07);overflow:hidden;border:1px solid rgba(201,169,110,.14)}
+  .lhbars{display:flex;flex-direction:column;gap:14px;flex:1;justify-content:center}
+  .lhrow .lhtop{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px;gap:12px}
+  .lhrow .lhname{font-size:12px;font-weight:600;color:#fff;line-height:1.2}
+  .lhrow .lhname span{display:block;font-size:10px;font-weight:400;color:rgba(247,243,234,.7);letter-spacing:.03em;margin-top:1px}
+  .lhrow .lhval{font-family:'Playfair Display',serif;font-size:15px;font-weight:700;color:var(--gold-bright);white-space:nowrap}
+  .lhrow .track{height:14px;border-radius:7px;background:rgba(255,255,255,.07);overflow:hidden;border:1px solid rgba(201,169,110,.14)}
   .lhrow .fill{height:100%;border-radius:7px;width:0;transition:width 1.2s cubic-bezier(.22,1,.36,1)}
-  .seawater{margin-top:11px;font-size:10px;color:rgba(247,243,234,.72);display:flex;align-items:center;gap:7px}
+  .seawater{margin-top:13px;font-size:10.5px;color:rgba(247,243,234,.82);display:flex;align-items:center;gap:7px;line-height:1.4}
   .seawater b{color:#fff;font-weight:700}
   .seawater .wic{width:13px;height:13px;border-radius:3px;background:linear-gradient(135deg,#2f7d8a,#3fa0b0)}
 
@@ -218,12 +218,12 @@
   @keyframes pulse{0%{transform:scale(.85);opacity:.7}100%{transform:scale(1.45);opacity:0}}
   .nowtag{margin-top:6px;font-size:8.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#2a1f0c;background:linear-gradient(180deg,var(--gold-bright),var(--gold));border-radius:999px;padding:2px 9px}
   .tlyear{margin-top:9px;font-family:'Plus Jakarta Sans';font-weight:800;font-size:14px;color:#fff;letter-spacing:.01em}
-  .tlname{margin-top:3px;font-size:10.5px;font-weight:700;color:var(--gold-bright);letter-spacing:.02em}
-  .tldesc{margin-top:4px;font-size:9.8px;line-height:1.33;color:rgba(247,243,234,.78);max-width:200px}
-  .tltag{margin-top:6px;font-size:8.5px;letter-spacing:.08em;text-transform:uppercase;color:rgba(201,169,110,.85);border:1px solid rgba(201,169,110,.3);border-radius:999px;padding:2px 8px}
+  .tlname{margin-top:3px;font-size:11px;font-weight:700;color:var(--gold-bright);letter-spacing:.02em}
+  .tldesc{margin-top:5px;font-size:10.5px;line-height:1.4;color:rgba(247,243,234,.86);max-width:205px}
+  .tltag{margin-top:7px;font-size:8.5px;letter-spacing:.08em;text-transform:uppercase;color:rgba(201,169,110,.9);border:1px solid rgba(201,169,110,.35);border-radius:999px;padding:2px 8px}
 
   /* ---------- footer ---------- */
-  .foot{grid-area:footer;z-index:3;display:flex;justify-content:space-between;align-items:center;font-size:9.5px;color:rgba(247,243,234,.6);letter-spacing:.03em;border-top:1px solid rgba(201,169,110,.16);padding-top:9px;margin-top:2px}
+  .foot{grid-area:footer;z-index:3;display:flex;justify-content:space-between;align-items:center;gap:16px;font-size:10px;color:rgba(247,243,234,.74);letter-spacing:.03em;border-top:1px solid rgba(201,169,110,.16);padding-top:10px;margin-top:2px}
   .foot b{color:var(--gold-bright);font-weight:700}
   .foot .right{text-align:right}
 
@@ -231,6 +231,57 @@
   .reveal{opacity:0;transform:translateY(14px)}
   .in .reveal{animation:rise .7s cubic-bezier(.22,1,.36,1) forwards}
   @keyframes rise{to{opacity:1;transform:none}}
+
+  /* ---------- responsive: reflow on narrow screens ---------- */
+  @media (max-width:1024px){
+    .stage{padding:16px 12px 40px}
+    .poster{
+      width:100%!important;max-width:860px;min-height:0;height:auto;
+      transform:none!important;margin-bottom:0!important;
+    }
+    .canvas{
+      padding:24px 22px 18px;
+      grid-template-columns:1fr;
+      grid-template-rows:none;
+      grid-template-areas:
+        "header"
+        "principles"
+        "kawasan"
+        "lahan"
+        "pembiayaan"
+        "timeline"
+        "footer";
+      gap:16px;
+    }
+    header{flex-direction:column;align-items:flex-start;gap:14px}
+    .vision{max-width:none;text-align:left;align-items:flex-start}
+    .title{font-size:46px}
+    .vision .vtag{font-size:27px}
+    /* timeline becomes vertical */
+    .tl{grid-template-columns:1fr;gap:14px;padding:8px 4px}
+    .tl::before{display:none}
+    .tlstep{flex-direction:row;align-items:flex-start;text-align:left;gap:13px;padding:0}
+    .tlnode{flex:0 0 auto}
+    .tlstep>div:not(.tlnode){text-align:left}
+    .tlyear{margin-top:0}
+    .tldesc{max-width:none}
+    .tlstep.current .tlnode::after{animation:none;opacity:0}
+  }
+  @media (max-width:680px){
+    .canvas{padding:20px 16px 16px}
+    .title{font-size:34px}
+    .vision .vtag{font-size:22px}
+    .pgrid{grid-template-columns:repeat(2,1fr);grid-template-rows:none}
+    .pr-head{flex-direction:column;align-items:flex-start;gap:9px}
+    .donut-wrap{flex-direction:column;align-items:flex-start;gap:14px}
+    .foot{flex-direction:column;align-items:flex-start;gap:5px}
+    .foot .right{text-align:left}
+    .toolbar{flex-direction:column;gap:8px;text-align:center}
+  }
+  @media (max-width:440px){
+    .pgrid{grid-template-columns:1fr}
+    .title{font-size:28px}
+  }
 
   /* ---------- print ---------- */
   @media print{
@@ -408,7 +459,7 @@
       <!-- FOOTER -->
       <div class="foot">
         <div>Sumber : <b>UU Nomor 3/2022 jo. UU Nomor 21/2023 tentang IKN</b></div>
-        <div class="right">Bahan informasi publik <b>@nusantara_merchandise</b> © 2026</div>
+        <div class="right">Bahan informasi publik · <b>@nusantara_merchandise</b> © 2026</div>
       </div>
 
     </div>
@@ -421,6 +472,12 @@
   function fitPoster(){
     var p = document.getElementById('poster');
     if(!p) return;
+    // below 1024px CSS handles fluid reflow — clear any transform
+    if(window.innerWidth <= 1024){
+      p.style.transform = 'none';
+      p.style.marginBottom = '0';
+      return;
+    }
     var pad = 36;
     var availW = window.innerWidth - pad;
     var scale = Math.min(1, availW / 1480);
